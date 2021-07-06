@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_ibralamedyaModelStoreContainer" CdmEntityContainer="db_ibralamedyaEntities3">
+    <EntitySetMapping Name="anaicerik">
+      <EntityTypeMapping TypeName="db_ibralamedyaModel.anaicerik">
+        <MappingFragment StoreEntitySet="anaicerik">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="sliderfoto" ColumnName="sliderfoto" />
+          <ScalarProperty Name="slidermetin" ColumnName="slidermetin" />
+          <ScalarProperty Name="hizmetana" ColumnName="hizmetana" />
+          <ScalarProperty Name="referanslarlogo" ColumnName="referanslarlogo" />
+          <ScalarProperty Name="bitirilenproje" ColumnName="bitirilenproje" />
+          <ScalarProperty Name="musyorum" ColumnName="musyorum" />
+          <ScalarProperty Name="butunproje" ColumnName="butunproje" />
+          <ScalarProperty Name="hizmetverilensektorler" ColumnName="hizmetverilensektorler" />
+          <ScalarProperty Name="mutlumus" ColumnName="mutlumus" />
+          <ScalarProperty Name="iletisim" ColumnName="iletisim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calisanlarimiz">
+      <EntityTypeMapping TypeName="db_ibralamedyaModel.calisanlarimiz">
+        <MappingFragment StoreEntitySet="calisanlarimiz">
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="baslikbgresim" ColumnName="baslikbgresim" />
+          <ScalarProperty Name="sayfabaslik" ColumnName="sayfabaslik" />
+          <ScalarProperty Name="calisanfoto" ColumnName="calisanfoto" />
+          <ScalarProperty Name="calisanadi" ColumnName="calisanadi" />
+          <ScalarProperty Name="calisansoyadi" ColumnName="calisansoyadi" />
+          <ScalarProperty Name="calisangorevi" ColumnName="calisangorevi" />
+          <ScalarProperty Name="calisanhakkinda" ColumnName="calisanhakkinda" />
+          <ScalarProperty Name="aktif_pasif" ColumnName="aktif/pasif" />
+          <ScalarProperty Name="onecikar" ColumnName="onecikar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="galeri">
+      <EntityTypeMapping TypeName="db_ibralamedyaModel.galeri">
+        <MappingFragment StoreEntitySet="galeri">
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="baslikbgresim" ColumnName="baslikbgresim" />
+          <ScalarProperty Name="sayfabaslik" ColumnName="sayfabaslik" />
+          <ScalarProperty Name="foto" ColumnName="foto" />
+          <ScalarProperty Name="fotoadi" ColumnName="fotoadi" />
+          <ScalarProperty Name="aktif_pasif" ColumnName="aktif/pasif" />
+          <ScalarProperty Name="onecikar" ColumnName="onecikar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hakkimizda">
+      <EntityTypeMapping TypeName="db_ibralamedyaModel.hakkimizda">
+        <MappingFragment StoreEntitySet="hakkimizda">
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="haid" ColumnName="haid" />
+          <ScalarProperty Name="baslikbgresim" ColumnName="baslikbgresim" />
+          <ScalarProperty Name="sayfabaslik" ColumnName="sayfabaslik" />
+          <ScalarProperty Name="icerikresim" ColumnName="icerikresim" />
+          <ScalarProperty Name="icerikbaslik" ColumnName="icerikbaslik" />
+          <ScalarProperty Name="icerikmetin" ColumnName="icerikmetin" />
+          <ScalarProperty Name="icerikmadde1" ColumnName="icerikmadde1" />
+          <ScalarProperty Name="icerikmadde2" ColumnName="icerikmadde2" />
+          <ScalarProperty Name="icerikmadde3" ColumnName="icerikmadde3" />
+          <ScalarProperty Name="musteriyorum" ColumnName="musteriyorum" />
+          <ScalarProperty Name="musterifoto" ColumnName="musterifoto" />
+          <ScalarProperty Name="musteriad" ColumnName="musteriad" />
+          <ScalarProperty Name="musterisirketadi" ColumnName="musterisirketadi" />
+          <ScalarProperty Name="aktif_pasif" ColumnName="aktif/pasif" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="onecikar" ColumnName="onecikar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hizmetlerimiz">
+      <EntityTypeMapping TypeName="db_ibralamedyaModel.hizmetlerimiz">
+        <MappingFragment StoreEntitySet="hizmetlerimiz">
+          <ScalarProperty Name="hid" ColumnName="hid" />
+          <ScalarProperty Name="baslikbgresim" ColumnName="baslikbgresim" />
+          <ScalarProperty Name="sayfabaslik" ColumnName="sayfabaslik" />
+          <ScalarProperty Name="maddelogo" ColumnName="maddelogo" />
+          <ScalarProperty Name="maddebaslik" ColumnName="maddebaslik" />
+          <ScalarProperty Name="maddeaciklama" ColumnName="maddeaciklama" />
+          <ScalarProperty Name="madde1" ColumnName="madde1" />
+          <ScalarProperty Name="madde2" ColumnName="madde2" />
+          <ScalarProperty Name="madde3" ColumnName="madde3" />
+          <ScalarProperty Name="hizmetresim" ColumnName="hizmetresim" />
+          <ScalarProperty Name="hizmetbaslik" ColumnName="hizmetbaslik" />
+          <ScalarProperty Name="hizmetaciklama" ColumnName="hizmetaciklama" />
+          <ScalarProperty Name="aktif_pasif" ColumnName="aktif/pasif" />
+          <ScalarProperty Name="onecikar" ColumnName="onecikar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="iletisim">
+      <EntityTypeMapping TypeName="db_ibralamedyaModel.iletisim">
+        <MappingFragment StoreEntitySet="iletisim">
+          <ScalarProperty Name="iid" ColumnName="iid" />
+          <ScalarProperty Name="baslikbgresim" ColumnName="baslikbgresim" />
+          <ScalarProperty Name="sayfabaslik" ColumnName="sayfabaslik" />
+          <ScalarProperty Name="ekstrabaslik" ColumnName="ekstrabaslik" />
+          <ScalarProperty Name="iletisimbaslik" ColumnName="iletisimbaslik" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="telefon1" ColumnName="telefon1" />
+          <ScalarProperty Name="telefon2" ColumnName="telefon2" />
+          <ScalarProperty Name="mail1" ColumnName="mail1" />
+          <ScalarProperty Name="mail2" ColumnName="mail2" />
+          <ScalarProperty Name="twitter" ColumnName="twitter" />
+          <ScalarProperty Name="facebook" ColumnName="facebook" />
+          <ScalarProperty Name="instagram" ColumnName="instagram" />
+          <ScalarProperty Name="linkedin" ColumnName="linkedin" />
+          <ScalarProperty Name="youtube" ColumnName="youtube" />
+          <ScalarProperty Name="konumbilgisi" ColumnName="konumbilgisi" />
+          <ScalarProperty Name="aktif_pasif" ColumnName="aktif/pasif" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="referanslar">
+      <EntityTypeMapping TypeName="db_ibralamedyaModel.referanslar">
+        <MappingFragment StoreEntitySet="referanslar">
+          <ScalarProperty Name="rid" ColumnName="rid" />
+          <ScalarProperty Name="baslikbgresim" ColumnName="baslikbgresim" />
+          <ScalarProperty Name="sayfabaslik" ColumnName="sayfabaslik" />
+          <ScalarProperty Name="referanslogo" ColumnName="referanslogo" />
+          <ScalarProperty Name="referansadi" ColumnName="referansadi" />
+          <ScalarProperty Name="aktif_pasif" ColumnName="aktif/pasif" />
+          <ScalarProperty Name="onecikar" ColumnName="onecikar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

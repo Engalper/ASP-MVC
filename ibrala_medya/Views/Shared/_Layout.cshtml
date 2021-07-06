@@ -1,0 +1,186 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>@ViewBag.title</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="~/Source/ibralamedya/apple-touch-icon.html">
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/images/fav.png">
+    <!-- bootstrap v4 css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.min.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/font-awesome.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/animate.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/owl.carousel.css">
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="~/Content/fonts/flaticon.css">
+    <!-- rsmenu CSS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/rsmenu-main.css">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/magnific-popup.css">
+    <!-- rsanimations css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/rsanimations.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css">
+    <!-- switch color presets css -->
+    <link id="switch_style" href="#" rel="stylesheet" type="text/css">
+    <!-- Spacing css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/spacing.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/responsive.css">
+</head>
+<body>
+    <!--End preloader here -->
+    <!--Header Section Start-->
+    <header id="rs-header" class="rs-header transparent-header inner-page">
+        <!-- Header Menu Start -->
+        <div class="menu-area menu-sticky">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="logo-area normal-logo">
+                            <a href="index.html"><img src="~/Content/images/dark-logo.png" alt="logo"></a>
+                        </div>
+                        <div class="logo-area sticky-logo">
+                            <a href="index.html"><img src="~/Content/images/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 mobile-menu-area">
+                        <div class="rs-menu-area display-flex-center">
+                            <div class="main-menu">
+                                <div class="mobile-menu">
+                                    <a class="rs-menu-toggle">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                                <nav class="rs-menu">
+                                    <ul class="nav-menu">
+                                        <!-- Home -->
+                                        <li><a href="@Url.Action("Index","Default")">Anasayfa</a></li>
+                                        <!-- End Home -->
+                                        <!-- About Start -->
+                                        <li><a href="@Url.Action("hakkimizda","Default")" class="@(ViewBag.Title=="Hakkımızda"?"active":"")">Hakkımızda</a></li>
+                                        <!-- About End -->
+                                        <!-- Services Start -->
+                                        <li><a href="@Url.Action("hizmetler","Default")" class="@(ViewBag.Title=="Hizmetlerimiz"?"active":"")">Hizmet&Çözümler</a></li>
+                                        <!-- Services End -->
+                                        <li><a href="@Url.Action("referanslar","Default")" class="@(ViewBag.Title=="Referanslarımız"?"active":"")">Referanslarımız</a></li>
+                                        <li><a href="@Url.Action("galeri","Default")" class="@(ViewBag.Title=="Galeri"?"active":"")">Galeri</a></li>
+                                        <li><a href="@Url.Action("iletisim","Default")" class="@(ViewBag.Title=="İletişim"?"active":"")">İletişim</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Menu End -->
+    </header>
+    <!--Header Section End-->
+   
+    <div id="rs-about" class="rs-about pt-130 md-pt-100">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <footer id="rs-footer" class="rs-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 md-mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#"><img src="~/Content/images/dark-logo.png" alt="Footer Logo"></a>
+                            </div>
+                            <div class="copyright">
+                                <p>© Copyrights 2021 <a href="#">İbrala Medya</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 md-mb-30">
+                        <div class="footer-widget">
+                            <h4 class="footer-title">Bize Ulaşın</h4>
+                            <ul class="address-widget">
+                                <li>Adres</li>
+                                <li><a href="tel:+905458572651">0545 857 2651</a></li>
+                                <li><a href="mailto:ibralamedya@gmail.com">ibralamedya@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <div class="footer-widget">
+                            <!-- Newsletter Start -->
+
+                            <div class="footer-widget">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="right-bar-button text-right" style="margin-top:30px; margin-right:90px;">
+                                <ul>
+                                    <li><a class="readon menu-btn" href="tel:+905539706183">Teklif Alın</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- start scrollUp  -->
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- end scrollUp  -->
+    <!-- jquery latest version -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <!-- modernizr js -->
+    <script src="~/Content/js/modernizr-2.8.3.min.js"></script>
+    <!-- counter top js -->
+    <script src="~/Content/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/js/waypoints.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <!-- magnific popup -->
+    <script src="~/Content/js/jquery.magnific-popup.min.js"></script>
+    <!-- wow js -->
+    <script src="~/Content/js/wow.min.js"></script>
+    <!-- skillbar js -->
+    <script src="~/Content/js/skill.bars.jquery.js"></script>
+    <!-- rsmenu js -->
+    <script src="~/Content/js/rsmenu-main.js"></script>
+    <!-- plugins js -->
+    <script src="~/Content/js/plugins.js"></script>
+    <!-- Contact js -->
+    <script src="~/Content/js/contact.form.js"></script>
+    <!-- main js -->
+    <script src="~/Content/js/main.js"></script>
+</body>
+
+</html>

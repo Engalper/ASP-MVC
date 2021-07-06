@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_ibralamedyaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="anaicerik">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="logo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="sliderfoto" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="slidermetin" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="hizmetana" Type="Int32" />
+    <Property Name="referanslarlogo" Type="Int32" />
+    <Property Name="bitirilenproje" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="musyorum" Type="Int32" />
+    <Property Name="butunproje" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="hizmetverilensektorler" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="mutlumus" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="iletisim" Type="Int32" />
+    <NavigationProperty Name="hakkimizda" Relationship="Self.FK_anaicerik_hakkimizda" FromRole="anaicerik" ToRole="hakkimizda" />
+    <NavigationProperty Name="hizmetlerimiz" Relationship="Self.FK_anaicerik_hizmetlerimiz" FromRole="anaicerik" ToRole="hizmetlerimiz" />
+    <NavigationProperty Name="iletisim1" Relationship="Self.FK_anaicerik_iletisim" FromRole="anaicerik" ToRole="iletisim" />
+    <NavigationProperty Name="referanslar" Relationship="Self.FK_anaicerik_referanslar" FromRole="anaicerik" ToRole="referanslar" />
+  </EntityType>
+  <EntityType Name="calisanlarimiz">
+    <Key>
+      <PropertyRef Name="cid" />
+    </Key>
+    <Property Name="cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslikbgresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="sayfabaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="calisanfoto" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="calisanadi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="calisansoyadi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="calisangorevi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="calisanhakkinda" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="aktif_pasif" Type="Boolean" Nullable="false" />
+    <Property Name="onecikar" Type="Boolean" />
+    <NavigationProperty Name="hakkimizda" Relationship="Self.FK_hakkimizda_calisanlarimiz" FromRole="calisanlarimiz" ToRole="hakkimizda" />
+  </EntityType>
+  <EntityType Name="galeri">
+    <Key>
+      <PropertyRef Name="gid" />
+    </Key>
+    <Property Name="gid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslikbgresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sayfabaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="foto" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fotoadi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="aktif_pasif" Type="Boolean" Nullable="false" />
+    <Property Name="onecikar" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="hakkimizda">
+    <Key>
+      <PropertyRef Name="haid" />
+    </Key>
+    <Property Name="haid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslikbgresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sayfabaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="icerikresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="icerikbaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="icerikmetin" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="icerikmadde1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="icerikmadde2" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="icerikmadde3" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="musteriyorum" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="musterifoto" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="musteriad" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="musterisirketadi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="aktif_pasif" Type="Boolean" Nullable="false" />
+    <Property Name="cid" Type="Int32" />
+    <Property Name="onecikar" Type="Boolean" />
+    <NavigationProperty Name="anaicerik" Relationship="Self.FK_anaicerik_hakkimizda" FromRole="hakkimizda" ToRole="anaicerik" />
+    <NavigationProperty Name="calisanlarimiz" Relationship="Self.FK_hakkimizda_calisanlarimiz" FromRole="hakkimizda" ToRole="calisanlarimiz" />
+    <Property Name="rid" Type="Int32" />
+    <NavigationProperty Name="referanslar" Relationship="db_ibralamedyaModel.FK_hakkimizda_referanslar" FromRole="hakkimizda" ToRole="referanslar" />
+  </EntityType>
+  <EntityType Name="hizmetlerimiz">
+    <Key>
+      <PropertyRef Name="hid" />
+    </Key>
+    <Property Name="hid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslikbgresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="sayfabaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="maddelogo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="maddebaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="maddeaciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="madde1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="madde2" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="madde3" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="hizmetresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="hizmetbaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="hizmetaciklama" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="aktif_pasif" Type="Boolean" Nullable="false" />
+    <Property Name="onecikar" Type="Boolean" />
+    <NavigationProperty Name="anaicerik" Relationship="Self.FK_anaicerik_hizmetlerimiz" FromRole="hizmetlerimiz" ToRole="anaicerik" />
+  </EntityType>
+  <EntityType Name="iletisim">
+    <Key>
+      <PropertyRef Name="iid" />
+    </Key>
+    <Property Name="iid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslikbgresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sayfabaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ekstrabaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="iletisimbaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="adres" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefon1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefon2" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mail1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mail2" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="twitter" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="facebook" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="instagram" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="linkedin" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="youtube" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="konumbilgisi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="aktif_pasif" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="anaicerik" Relationship="Self.FK_anaicerik_iletisim" FromRole="iletisim" ToRole="anaicerik" />
+  </EntityType>
+  <EntityType Name="referanslar">
+    <Key>
+      <PropertyRef Name="rid" />
+    </Key>
+    <Property Name="rid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslikbgresim" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sayfabaslik" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="referanslogo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="referansadi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="aktif_pasif" Type="Boolean" Nullable="false" />
+    <Property Name="onecikar" Type="Boolean" />
+    <NavigationProperty Name="anaicerik" Relationship="Self.FK_anaicerik_referanslar" FromRole="referanslar" ToRole="anaicerik" />
+    <NavigationProperty Name="hakkimizda" Relationship="db_ibralamedyaModel.FK_hakkimizda_referanslar" FromRole="referanslar" ToRole="hakkimizda" />
+  </EntityType>
+  <Association Name="FK_anaicerik_hakkimizda">
+    <End Role="hakkimizda" Type="Self.hakkimizda" Multiplicity="0..1" />
+    <End Role="anaicerik" Type="Self.anaicerik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hakkimizda">
+        <PropertyRef Name="haid" />
+      </Principal>
+      <Dependent Role="anaicerik">
+        <PropertyRef Name="musyorum" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_anaicerik_hizmetlerimiz">
+    <End Role="hizmetlerimiz" Type="Self.hizmetlerimiz" Multiplicity="0..1" />
+    <End Role="anaicerik" Type="Self.anaicerik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hizmetlerimiz">
+        <PropertyRef Name="hid" />
+      </Principal>
+      <Dependent Role="anaicerik">
+        <PropertyRef Name="hizmetana" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_anaicerik_iletisim">
+    <End Role="iletisim" Type="Self.iletisim" Multiplicity="0..1" />
+    <End Role="anaicerik" Type="Self.anaicerik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iletisim">
+        <PropertyRef Name="iid" />
+      </Principal>
+      <Dependent Role="anaicerik">
+        <PropertyRef Name="iletisim" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_anaicerik_referanslar">
+    <End Role="referanslar" Type="Self.referanslar" Multiplicity="0..1" />
+    <End Role="anaicerik" Type="Self.anaicerik" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="referanslar">
+        <PropertyRef Name="rid" />
+      </Principal>
+      <Dependent Role="anaicerik">
+        <PropertyRef Name="referanslarlogo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_hakkimizda_calisanlarimiz">
+    <End Role="calisanlarimiz" Type="Self.calisanlarimiz" Multiplicity="0..1" />
+    <End Role="hakkimizda" Type="Self.hakkimizda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="calisanlarimiz">
+        <PropertyRef Name="cid" />
+      </Principal>
+      <Dependent Role="hakkimizda">
+        <PropertyRef Name="cid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_ibralamedyaEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="anaicerik" EntityType="Self.anaicerik" />
+    <EntitySet Name="calisanlarimiz" EntityType="Self.calisanlarimiz" />
+    <EntitySet Name="galeri" EntityType="Self.galeri" />
+    <EntitySet Name="hakkimizda" EntityType="Self.hakkimizda" />
+    <EntitySet Name="hizmetlerimiz" EntityType="Self.hizmetlerimiz" />
+    <EntitySet Name="iletisim" EntityType="Self.iletisim" />
+    <EntitySet Name="referanslar" EntityType="Self.referanslar" />
+    <AssociationSet Name="FK_anaicerik_hakkimizda" Association="Self.FK_anaicerik_hakkimizda">
+      <End Role="hakkimizda" EntitySet="hakkimizda" />
+      <End Role="anaicerik" EntitySet="anaicerik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_anaicerik_hizmetlerimiz" Association="Self.FK_anaicerik_hizmetlerimiz">
+      <End Role="hizmetlerimiz" EntitySet="hizmetlerimiz" />
+      <End Role="anaicerik" EntitySet="anaicerik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_anaicerik_iletisim" Association="Self.FK_anaicerik_iletisim">
+      <End Role="iletisim" EntitySet="iletisim" />
+      <End Role="anaicerik" EntitySet="anaicerik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_anaicerik_referanslar" Association="Self.FK_anaicerik_referanslar">
+      <End Role="referanslar" EntitySet="referanslar" />
+      <End Role="anaicerik" EntitySet="anaicerik" />
+    </AssociationSet>
+    <AssociationSet Name="FK_hakkimizda_calisanlarimiz" Association="Self.FK_hakkimizda_calisanlarimiz">
+      <End Role="calisanlarimiz" EntitySet="calisanlarimiz" />
+      <End Role="hakkimizda" EntitySet="hakkimizda" />
+    </AssociationSet>
+    <AssociationSet Name="FK_hakkimizda_referanslar" Association="db_ibralamedyaModel.FK_hakkimizda_referanslar">
+      <End Role="referanslar" EntitySet="referanslar" />
+      <End Role="hakkimizda" EntitySet="hakkimizda" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_hakkimizda_referanslar">
+    <End Type="db_ibralamedyaModel.referanslar" Role="referanslar" Multiplicity="0..1" />
+    <End Type="db_ibralamedyaModel.hakkimizda" Role="hakkimizda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="referanslar">
+        <PropertyRef Name="rid" />
+      </Principal>
+      <Dependent Role="hakkimizda">
+        <PropertyRef Name="rid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,587 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>AnaSayfa</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.html">
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/images/fav.png">
+    <!-- bootstrap v4 css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.min.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/font-awesome.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/animate.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/owl.carousel.css">
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="~/Content/fonts/flaticon.css">
+    <!-- rsmenu CSS -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/rsmenu-main.css">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/magnific-popup.css">
+    <!-- rsanimations css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/rsanimations.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css">
+    <!-- switch color presets css -->
+    <link id="switch_style" href="#" rel="stylesheet" type="text/css">
+    <!-- Spacing css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/spacing.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/responsive.css">
+    <!--Slider Documents-->
+    <link href="~/Content/slider/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/animate.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/jquery.countdown.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/fonts/font-awesome-5/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/fonts/font-awesome-4/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/fonts/font-awesome-5/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/fonts/elegant_font/HTML_CSS/style.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/fonts/et-line-font/style.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- color scheme -->
+    <link id="colors" href="~/Content/slider/css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/coloring.css" rel="stylesheet" type="text/css">
+
+    <!-- RS5.0 Stylesheet -->
+    <link href="~/Content/slider/revolution/css/settings.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/revolution/css/layers.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/revolution/css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/slider/css/rev-settings.css" rel="stylesheet" type="text/css">
+    <!--Slider Documents-->
+</head>
+<body>
+
+    <!--Header Section Start-->
+    <header id="rs-header" class="rs-header transparent-header">
+        <!-- Header Menu Start -->
+        <div class="menu-area menu-sticky">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="logo-area normal-logo">
+                            <a href="index.html"><img src="~/Content/images/logo-white.png" alt="logo"></a>
+                        </div>
+                        <div class="logo-area sticky-logo">
+                            <a href="index.html"><img src="~/Content/images/logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 mobile-menu-area">
+                        <div class="rs-menu-area display-flex-center">
+                            <div class="main-menu">
+                                <div class="mobile-menu">
+                                    <a class="rs-menu-toggle">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                                <nav class="rs-menu">
+                                    <ul class="nav-menu">
+                                        <!-- Home -->
+                                        <li><a class="active" href="@Url.Action("Index","Default")">Anasayfa</a></li>
+                                        <!-- End Home -->
+                                        <!-- About Start -->
+                                        <li><a href="@Url.Action("hakkimizda","Default")">Hakkımızda</a></li>
+                                        <!-- About End -->
+                                        <!-- Services Start -->
+                                        <li><a href="@Url.Action("hizmetler","Default")">Hizmet&Çözümler</a></li>
+                                        <!-- Services End -->
+                                        <!-- Home -->
+                                        <li><a href="@Url.Action("referanslar","Default")">Referanslarımız</a></li>
+                                        <!-- End Home -->
+                                        <!-- About Start -->
+                                        <li><a href="@Url.Action("galeri","Default")">Galeri</a></li>
+                                        <!-- About End -->
+                                        <!-- Services Start -->
+                                        <li><a href="@Url.Action("iletisim","Default")">İletişim</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Menu End -->
+    </header>
+    <!--Header Section End-->
+    <!-- Slider Section Start -->
+    <section aria-label="section-slider" class="fullwidthbanner-container" id="section-slider">
+        <div id="revolution-slider">
+            <ul>
+                <!--<li data-masterspeed="1500" data-slotamount="10" data-transition="fade">
+                      BACKGROUND IMAGE
+                    <img alt="" class="rev-slidebg" data-bgparallax="15" data-bgposition="center center" data-duration="20000" data-ease="Power1.easeOut" data-kenburns="off" data-lazyload="images/slider/1.jpg" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="110" src="images/slider/1.jpg">
+
+                    <div class="tp-caption custom-font-1" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000" data-transform_in="y:-100px;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:-20;s:500;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="20" data-y="230">
+                        Guaranteed
+                    </div>
+                    <div class="tp-caption custom-font-2" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="700" data-transform_in="y:-100px;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:-20;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="20" data-y="center">
+                        99.99% Uptime
+                    </div>
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1300" data-transform_in="y:100px;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="20" data-y="350">
+                        <a class="btn-slider" href="#">Read More</a>
+                    </div>
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1500" data-transform_in="y:0;s:0;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="600" data-y="center">
+                        <img src="slider/images/slider/half-circle.png" alt="">
+                    </div>
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1600" data-transform_in="y:0;rZ:-180;opacity:0;0:100;s:3200;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="580" data-y="373">
+                        <img src="slider/images/slider/line.png" alt="">
+                    </div>
+                </li>-->
+
+                <li data-masterspeed="1500" data-slotamount="10" data-transition="fade">
+                    <!--  BACKGROUND IMAGE -->
+                    <img alt="" class="rev-slidebg" data-bgparallax="15" data-bgposition="center center" data-duration="20000" data-ease="Power1.easeOut" data-kenburns="off" data-lazyload="~/Content/slider/images/slider/2.jpg" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="110" src="~/Content/slider/images/slider/1.jpg">
+
+                    <div class="tp-caption custom-font-2" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1000" data-transform_in="y:-100px;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:-20;s:500;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="20" data-y="230">
+                        İbrala Medya
+                    </div>
+                    <div class="tp-caption custom-font-1" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="700" data-transform_in="y:-100px;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:-20;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="20" data-y="center">
+                        Markanıza Atılan Kurumsal İmza
+                    </div>
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1300" data-transform_in="y:100px;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="20" data-y="350">
+                        <a class="btn-slider" href="#">Teklif Al</a>
+                    </div>
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1500" data-transform_in="y:0;s:0;opacity:0;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="550" data-y="center">
+                        <img src="~/Content/slider/images/slider/map.png" alt="">
+                    </div>
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1600" data-transform_in="y:100;opacity:0;0:100;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="690" data-y="360">
+                        <img src="~/Content/slider/images/slider/marker.png" alt="">
+                    </div>
+
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1700" data-transform_in="y:100;opacity:0;0:100;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="585" data-y="190">
+                        <img src="~/Content/slider/images/slider/marker.png" alt="">
+                    </div>
+
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1800" data-transform_in="y:100;opacity:0;0:100;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="785" data-y="215">
+                        <img src="~/Content/slider/images/slider/marker.png" alt="">
+                    </div>
+
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="1900" data-transform_in="y:100;opacity:0;0:100;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="920" data-y="250">
+                        <img src="~/Content/slider/images/slider/marker.png" alt="">
+                    </div>
+
+                    <div class="tp-caption tp-text text-left" data-height="none" data-responsive_offset="on" data-splitin="none" data-splitout="none" data-start="2000" data-transform_in="y:100;opacity:0;0:100;s:800;e:Power2.easeOut;" data-transform_out="opacity:0;y:30;s:700;e:Power2.easeInOut;" data-whitespace="nowrap" data-width="none" data-x="980" data-y="345">
+                        <img src="~/Content/slider/images/slider/marker.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Slider Section End -->
+    <!-- About Section Start-->
+    <div id="rs-about" class="rs-about pt-130 md-pt-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 md-mb-50">
+                    <div class="about-img wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">
+                        <img src="images/about/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="sec-title mb-30">
+                        <h2 class="title wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Hizmet Baslik 1</h2>
+                        <p class="wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">icerik satır 1safjasfjdaklgdjghdslghsdghsdklghsdlkghk<br>sdhgskdhgsdhgksdlghsdlghsdklghksdjajfalsfjasşlfjasşlf<br>jasfjasşlfjasşlfjalşfjşiçerik satır 3</p>
+                    </div>
+                    <div class="about-checkbox">
+                        <ul class="check-list-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                            <li>icerikmadde1</li>
+                            <li>icerikmadde2</li>
+                            <li>icerikmadde3</li>
+                            <li>icerikmadde4</li>
+
+                        </ul>
+                    </div>
+                    <div class="about-btn-part mt-40 wow fadeInLeft" style="margin-top: 10px;" data-wow-delay="300ms" data-wow-duration="2000ms">
+                        <a class="readon" href="#">Hizmetlrimize Gitsin</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .container end -->
+    </div>
+    <!-- About Section End-->
+    <!-- Services Section Start-->
+    <div id="rs-services" class="rs-services pt-130 pb-130 md-pt-100 md-pb-100">
+        <div class="container">
+            <div class="sec-title text-center md-text-left mb-100 md-mb-50">
+                <h2 class="title">Hizmetlerimiz</h2>
+                <p class="desc">Sektörünüzün 1 numarası olmak ister misiniz ?</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-100 md-mb-50">
+                    <div class="single-service">
+                        <div class="service-icon wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">
+                            <i class="flaticon-artificial-intelligence-1"></i>
+                        </div>
+                        <div class="service-text">
+                            <h4 class="service-title wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Küçük maddeler</h4>
+                            <p class="service-txt wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Maddelerin açıklaması</p>
+                            <ul class="check-list-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                                <li>madde1</li>
+                                <li>madde2</li>
+                                <li>madde3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .container end -->
+    </div>
+    <!-- Services Section End-->
+    <!-- About Section Start-->
+    <div id="rs-about2" class="rs-about gray-bg pt-130 pb-130 md-pt-100 md-pb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 md-mb-50 order-last">
+                    <div class="about-img wow fadeInLeftdata-wow-delay="300ms" data-wow-duration="2000ms">
+                        <img src="~/Content/images/about/2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 pr-0">
+                    <div class="sec-title mb-30">
+                        <h2 class="title wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">satır1baslık<br>satır2baslık</h2>
+                        <p class="wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">iceriksatır1<br>iceriksatır2<br>iceriksatır3</p>
+                    </div>
+                    <div class="about-checkbox">
+                        <ul class="check-list-box wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">
+                            <li>madde1</li>
+                            <li>madde2</li>
+                            <li>madde3</li>
+                            <li>madde4</li>
+                        </ul>
+                    </div>
+                    <div class="about-btn-part mt-40 wow fadeInLeft" style="margin-top: 10px;" data-wow-delay="300ms" data-wow-duration="2000ms">
+                        <a class="readon" href="#">HAkkımızdaya gitsin</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .container end -->
+    </div>
+    <!-- About Section End-->
+    <!-- Counter Section Start-->
+    <div id="rs-counter" class="rs-counter secondary-bg pt-100 pb-95 md-pt-80 md-pb-75">
+        <div class="container">
+            <div class="row">
+                <!-- COUNTER-LIST START -->
+                <div class="col-lg-3 col-md-6 md-mb-50">
+                    <div class="counter-part">
+                        <div class="counter-text">
+                            <div class="rs-count plus primary-color wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">50</div>
+                            <h4 class="counter-txt white-color wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">Tamamlanan Projeler</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- COUNTER-LIST END -->
+                <!-- COUNTER-LIST START -->
+                <div class="col-lg-3 col-md-6 md-mb-50">
+                    <div class="counter-part">
+                        <div class="counter-text">
+                            <div class="rs-count plus primary-color wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">50</div>
+                            <h4 class="counter-txt white-color wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Tüm Projelerimiz</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- COUNTER-LIST END -->
+                <!-- COUNTER-LIST START -->
+                <div class="col-lg-3 col-md-6 sm-mb-50">
+                    <div class="counter-part">
+                        <div class="counter-text">
+                            <div class="rs-count k primary-color wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">50</div>
+                            <h4 class="counter-txt white-color wow fadeInLeft data-wow-delay="300ms" data-wow-duration="2000ms">memnun müşteri</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- COUNTER-LIST END -->
+                <!-- COUNTER-LIST START -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="counter-part">
+                        <div class="counter-text">
+                            <div class="rs-count plus primary-color wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">50</div>
+                            <h4 class="counter-txt white-color wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">Hizmet Alanlarımız</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- COUNTER-LIST END -->
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section End-->
+    <!-- Blog Section Start -->
+    <div id="rs-blog" class="rs-blog pt-130 pb-130 md-pt-100 md-pb-100">
+        <div class="container">
+            <div class="sec-title text-center md-text-left mb-65">
+                <h2 class="title">Müşterilerimizin Görüşleri</h2>
+                <p class="desc">slogan bazlı içerik</p>
+            </div>
+            <div class="rs-carousel owl-carousel"
+                 data-loop="true"
+                 data-items="3"
+                 data-margin="40"
+                 data-nav="false"
+                 data-dots="false"
+                 data-autoplay="true"
+                 data-hoverpause="true"
+                 data-autoplay-timeout="5000"
+                 data-smart-speed="800"
+                 data-nav-speed="false"
+                 data-center="false"
+                 data-items-md="2"
+                 data-margin-md="30"
+                 data-center-md="false"
+                 data-nav-md="false"
+                 data-dots-md="false"
+                 data-items-sm="1"
+                 data-nav-sm="false"
+                 data-dots-sm="false"
+                 data-margin-sm="20"
+                 data-items-xs="1"
+                 data-nav-xs="false"
+                 data-dots-xs="false"
+                 data-margin-xs="0">
+                <div class="single-blog">
+                    <div class="blog-informations">
+                        <h3 class="blog-title"><a href="blog-details.html">New Adventure</a></h3>
+                        <span class="blog-date">05, June, 2020</span>
+                        <p class="blog-txt">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula</p>
+                        <a class="blog-icon" href="blog-details.html"><i class="flaticon-right-arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Section End -->
+    <!-- Referanslar Slider Start -->
+    <div id="rs-partner" class="rs-partner pb-130 md-pb-100">
+        <div class="container">
+            <div class="rs-carousel owl-carousel"
+                 data-loop="true"
+                 data-items="5"
+                 data-margin="30"
+                 data-nav="false"
+                 data-dots="false"
+                 data-autoplay="true"
+                 data-hoverpause="true"
+                 data-autoplay-timeout="5000"
+                 data-smart-speed="800"
+                 data-nav-speed="false"
+                 data-center="false"
+                 data-items-md="3"
+                 data-margin-md="30"
+                 data-center-md="false"
+                 data-nav-md="false"
+                 data-dots-md="false"
+                 data-items-sm="2"
+                 data-nav-sm="false"
+                 data-dots-sm="false"
+                 data-margin-sm="20"
+                 data-items-xs="1"
+                 data-nav-xs="false"
+                 data-dots-xs="false"
+                 data-margin-xs="0">
+                <div class="partner-item">
+                    <a href="#"><img src="~/Content/images/partner/1.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/Content/images/partner/2.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/Content/images/partner/3.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/Content/images/partner/4.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/Content/images/partner/5.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/Content/images/partner/6.png" alt="Partner Image"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="#"><img src="~/Content/images/partner/7.png" alt="Partner Image"></a>
+                </div>
+            </div> <!-- //.rs-carousel -->
+        </div>
+    </div>
+    <!-- Partner Slider End -->
+    <!-- Footer Start -->
+    <footer id="rs-footer" class="rs-footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 md-mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#"><img src="~/Content/images/dark-logo.png" alt="Footer Logo"></a>
+                            </div>
+                            <div class="copyright">
+                                <p>© Copyrights 2021 <a href="#">İbrala Medya</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 md-mb-30">
+                        <div class="footer-widget">
+                            <h4 class="footer-title"><a href="#">Bize Ulaşın</a></h4>
+                            <ul class="address-widget">
+                                <li><a href="#">Adres</a></li>
+                                <li><a href="tel:+905458572651">0545 857 2651</a></li>
+                                <li><a href="mailto:ibralamedya@gmail.com">ibralamedya@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <div class="footer-widget">
+                            <!-- Newsletter Start -->
+
+                            <div class="footer-widget">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="right-bar-button text-right" style="margin-top:30px; margin-right:90px;">
+                                <ul>
+                                    <li><a class="readon menu-btn" href="tel:+905539706183">Teklif Alın</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- start scrollUp  -->
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- end scrollUp  -->
+    <!-- jquery latest version -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <!-- modernizr js -->
+    <script src="~/Content/js/modernizr-2.8.3.min.js"></script>
+    <!-- counter top js -->
+    <script src="~/Content/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/js/waypoints.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <!-- magnific popup -->
+    <script src="~/Content/js/jquery.magnific-popup.min.js"></script>
+    <!-- wow js -->
+    <script src="~/Content/js/wow.min.js"></script>
+    <!-- skillbar js -->
+    <script src="~/Content/js/skill.bars.jquery.js"></script>
+    <!-- rsmenu js -->
+    <script src="~/Content/js/rsmenu-main.js"></script>
+    <!-- plugins js -->
+    <script src="~/Content/js/plugins.js"></script>
+    <!-- Contact js -->
+    <script src="~/Content/js/contact.form.js"></script>
+    <!-- main js -->
+    <script src="~/Content/js/main.js"></script>
+
+    <!--Slider Documents-->
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="~/Content/slider/js/jquery.min.js"></script>
+    <script src="~/Content/slider/js/bootstrap.min.js"></script>
+    <script src="~/Content/slider/js/wow.min.js"></script>
+    <script src="~/Content/slider/js/jquery.isotope.min.js"></script>
+    <script src="~/Content/slider/js/easing.js"></script>
+    <script src="~/Content/slider/js/owl.carousel.js"></script>
+    <script src="~/Content/slider/js/validation.js"></script>
+    <script src="~/Content/slider/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/slider/js/enquire.min.js"></script>
+    <script src="~/Content/slider/js/jquery.stellar.min.js"></script>
+    <script src="~/Content/slider/js/jquery.plugin.js"></script>
+    <script src="~/Content/slider/js/typed.js"></script>
+    <script src="~/Content/slider/js/jquery.countTo.js"></script>
+    <script src="~/Content/slider/js/jquery.countdown.js"></script>
+    <script src="~/Content/slider/js/designesia.js"></script>
+
+    <!-- RS5.0 Core JS Files -->
+    <script src="~/Content/slider/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script src="~/Content/slider/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+
+    <!-- RS5.0 Extensions Files -->
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/Content/slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <!-- current page only scripts -->
+
+    <script>
+        jQuery(document).ready(function () {
+            // revolution slider
+            jQuery("#revolution-slider").revolution({
+                sliderType: "standard",
+                sliderLayout: "fullscreen",
+                delay: 5000,
+                navigation: {
+                    arrows: {
+                        enable: true
+                    }
+                },
+                parallax: {
+                    type: "mouse",
+                    origo: "slidercenter",
+                    speed: 2000,
+                    levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+                },
+                spinner: "off",
+                gridwidth: 1140,
+                gridheight: 600,
+                disableProgressBar: "on"
+            });
+        });
+    </script>
+
+    <!--Start of Tawk.to Script-
+    <script>
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5e4a18a6298c395d1ce84227/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+﻿@model ibrala_medya.Models.calisanlarimiz
+@{
+    ViewBag.Title = "Çalışanlarımız";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumbs Start -->
+<div class="rs-breadcrumbs">
+    <div class="breadcrumbs-wrap">
+        <img src="~/Content/images/breadcrumbs/bg1.jpg" alt="Breadcrumbs Image">
+        <div class="breadcrumbs-inner">
+            <div class="container">
+                <div class="breadcrumbs-text">
+                    <h1 class="breadcrumbs-title">Çalışanlarımız Detay</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs End -->
+<!-- Team Single Start -->
+<div class="rs-team team-single pt-100 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 md-mb-30">
+                <div class="team-item">
+                    <div class="img-part">
+                        <img src="~/Content/images/team/@Model.calisanfoto" alt="">
+                    </div>
+                    <div class="content-part">
+                        <h3 class="name">
+                            <a class="title" href="#">@Model.calisanadi  @Model.calisansoyadi</a>
+                        </h3>
+                        <span class="category">@Model.calisangorevi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 pl-60 md-pl-15">
+                <h3 class="team-about-title mb-10 kinder-pulm">@Model.calisanadi  @Model.calisansoyadi</h3>
+                <p>
+                    @Model.calisanhakkinda
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team Single End -->
+<!-- Team  Section Start Here -->
+<div class="rs-team pb-100">
+    <div class="container">
+        <div class="sec-title text-center mb-60">
+            <h2 class="title title-color">Diğer Çalışanlarımız</h2>
+        </div>
+        <div class="rs-carousel owl-carousel"
+             data-loop="true"
+             data-items="3"
+             data-margin="30"
+             data-nav="false"
+             data-dots="false"
+             data-autoplay="true"
+             data-hoverpause="true"
+             data-autoplay-timeout="5000"
+             data-smart-speed="800"
+             data-nav-speed="false"
+             data-center="true"
+             data-items-md="2"
+             data-margin-md="20"
+             data-center-md="false"
+             data-nav-md="false"
+             data-dots-md="false"
+             data-items-sm="1"
+             data-nav-sm="false"
+             data-dots-sm="false"
+             data-margin-sm="0"
+             data-items-xs="1"
+             data-nav-xs="false"
+             data-dots-xs="false"
+             data-margin-xs="0">
+            <div class="item">
+                <div class="team-item">
+                    <div class="img-part">
+                        <img src="~/Content/images/team/1.png" alt="">
+                    </div>
+                    <div class="content-part">
+                        <h3 class="name">
+                            <a class="title" href="#">İsim Soyisim</a>
+                        </h3>
+                        <span class="category">görevi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

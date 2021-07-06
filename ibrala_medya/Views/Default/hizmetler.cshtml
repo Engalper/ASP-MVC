@@ -1,0 +1,108 @@
+﻿@model List<ibrala_medya.Models.hizmetlerimiz>
+@{
+    ViewBag.Title = "Hizmetlerimiz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumbs Start -->
+<div class="rs-breadcrumbs">
+    <div class="breadcrumbs-wrap">
+        <img src="~/Content/images/breadcrumbs/bg1.jpg" alt="Breadcrumbs Image">
+        <div class="breadcrumbs-inner">
+            <div class="container">
+                <div class="breadcrumbs-text">
+                    <h1 class="breadcrumbs-title">Hizmetlerimiz</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs End -->
+<!-- Services Section Start-->
+<div id="rs-services" class="rs-services pt-130 pb-130 md-pt-100 md-pb-100">
+    <div class="container">
+        <div class="row">
+            @foreach (var hizmetler in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-100 md-mb-50">
+
+                    <div class="single-service">
+
+
+                        <div class="service-icon wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                            <i class="flaticon-artificial-intelligence-1"></i>
+                        </div>
+                        <div class="service-text">
+                            <h4 class="service-title wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">@hizmetler.maddebaslik</h4>
+                            <p class="service-txt wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">@hizmetler.maddeaciklama</p>
+                            <ul class="check-list-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                                <li>@hizmetler.madde1</li>
+                                <li>@hizmetler.madde2</li>
+                                <li>@hizmetler.madde3</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>}
+        </div>
+    </div><!-- .container end -->
+</div>
+
+<!-- Services Section End-->
+<!-- Skill Section Start-->
+<div id="rs-about" class="rs-about pt-130 pb-130 md-pt-100 md-pb-100">
+    <div class="container">
+        @{ var tek = true; }
+        @foreach (var hizmet in Model)
+        {
+
+            <div class="row align-items-center @(tek==true?"pb-100 md-pb-50":" ")">
+                <div class="col-lg-7 md-mb-30">
+                    <div class="about-img wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                        <img src="~/Content/images/about/@hizmet.hizmetresim" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="sec-title mb-30">
+                        <h2 class="title wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">@hizmet.hizmetbaslik</h2>
+                        <p class="wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">@hizmet.hizmetaciklama</p>
+                    </div>
+                    <div class="about-checkbox">
+                        <ul class="check-list-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                            <li>@hizmet.madde1</li>
+                            <li>@hizmet.madde2</li>
+                            <li>@hizmet.madde3</li>
+                        </ul>
+                    </div>
+                    <!--<div class="about-btn-part mt-40 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                    <a class="readon" href="#">DahaSonra</a>
+                </div>-->
+                </div>
+            </div>
+           <!-- <div class="row align-items-center @(tek==true?" ":"pb-100 md-pb-50")">
+                <div class="col-lg-7 md-mb-30 order-last">
+                    <div class="about-img wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <img src="images/about/@hizmet.hizmetresim" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 pr-0">
+                    <div class="sec-title mb-30">
+                        <h2 class="title wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">@hizmet.hizmetbaslik</h2>
+                        <p class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">@hizmet.hizmetaciklama</p>
+                    </div>
+                    <div class="about-checkbox">
+                        <ul class="check-list-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                            <li>@hizmet.madde1</li>
+                            <li>@hizmet.madde2</li>
+                            <li>@hizmet.madde3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            tek = !tek;
+        }
+    </div><!-- .container end -->
+</div>
+<!-- Skill Section End-->
+
